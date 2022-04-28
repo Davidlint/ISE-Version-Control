@@ -9,7 +9,7 @@ def view(grid):
                 print("  ", end = "")
 
             elif grid[i][j] == Maze.WALL:
-                print("##", end = "")
+                print("%%", end = "")
 
             elif grid[i][j] == Maze.START:
                 print("^^", end = "")
