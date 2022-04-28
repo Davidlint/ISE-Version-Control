@@ -66,14 +66,15 @@ if __name__ == "__main__":
             print("You fall into the chasm of doom.") # Out of bounds.
             
         else:
-            cell = grid[currentRow][currentCol]
+            cell = grid[Row][Col]
             if cell == EMPTY:
-                grid[currentRow][currentCol] = VISITED
+                grid[Row][Col] = VISITED
             
         elif cell == WALL:
                 done = True
                 print("You stumble blindly into a solid concrete wall.")
 
+<<<<<<< HEAD
         elif cell == END:
             done = True
             solved = True
@@ -81,6 +82,16 @@ if __name__ == "__main__":
 
         else:
             pass # Do nothing
+=======
+            elif grid[Row][Col] == END:
+                done = True
+                solved = True
+                print("Solved")
+                
+            else:
+                pass # Do nothing
+        
+>>>>>>> rename_vars
         charIndex += 1
     # end-while
 
